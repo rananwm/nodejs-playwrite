@@ -53,6 +53,12 @@ async function scrapeDisneyData(url1, url2) {
     return  res.status(500).json(error);
     }
   });
+
+  app.get("/", async (req, res) => {
+    
+    return  res.status(500).json("server is working");
+    
+  });
   
 
 app.listen(3000, () => {
